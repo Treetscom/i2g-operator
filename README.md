@@ -8,16 +8,16 @@
 We recommend using our helm chart in order to install this project.
 
 ```bash
-helm upgrade --install --namespace i2g --create-namespace i2g  oci://ghcr.io/intreecom/charts/i2g-operator -f values.yaml
+helm upgrade --install --namespace i2g --create-namespace i2g  oci://ghcr.io/treetscom/charts/i2g-operator -f values.yaml
 ```
 
 You can see our values file for helm chart by running this command:
 
 ```bash
-helm show values oci://ghcr.io/intreecom/charts/i2g-operator
+helm show values oci://ghcr.io/treetscom/charts/i2g-operator
 ```
 
-Sources of the helm chart are located here in our chart museum: https://github.com/Intreecom/charts/
+Sources of the helm chart are located here in our chart museum: https://github.com/Treetscom/charts/
 
 ## Configuration
 
@@ -73,7 +73,7 @@ metadata:
     i2g-operator-matches-header/2: "X-Forwarded-For=1.2.3.4"
     # Here's how to add additional matchers.
     i2g-operator-matches-query/2: "myQuery~=^(test.hehe|test.memes)"
-    
+
   name: test-ingress
 spec:
   ingressClassName: nginx
